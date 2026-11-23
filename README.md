@@ -46,10 +46,12 @@ The complete SQL script used for this project is available below. It contains th
 
 [View Complete SQL Script](SQL_Scripts/instacart_queries.sql)
 
-## SQL Analysis and key Findinfs
+## SQL Analysis and key Findings
 
 The following section presents the ten business questions investigated in this project. 
 Each analysis includes the SQL query used, it's corresponding result, and the key finding obtained 
+
+
 
 ### 1. Top-Selling Products by Revenue
 
@@ -67,6 +69,7 @@ Each analysis includes the SQL query used, it's corresponding result, and the ke
 generating *$15,100*. Revenue among the top 10 products ranged from approximately $12,816 to $15,100.
 
 
+
 ### 2. Chocolate Sales by Day of the Week
 
 *Question:* On which day of the week are chocolates mostly sold?
@@ -80,6 +83,7 @@ generating *$15,100*. Revenue among the top 10 products ranged from approximatel
 ![Question 2 Result](screenshots/question_02_result.png)
 
 *Key Finding:* Sunday recorded the highest number of chocolate orders, with *9,122 orders*.
+
 
 
 ### 3. Departmental Profitability
@@ -98,6 +102,7 @@ generating *$15,100*. Revenue among the top 10 products ranged from approximatel
 Personal Care recorded the highest profit at *$4,169,483, while Household recorded the lowest profit among the qualifying departments at *$1,959,703**.
 
 
+
 ### 4. Alcohol Sales on Christmas Day 2019
 
 *Question:* Which product departments recorded the highest sales quantities on Christmas Day 2019, and where did alcoholic products rank?
@@ -111,6 +116,7 @@ Personal Care recorded the highest profit at *$4,169,483, while Household record
 ![Question 4 Result](screenshots/question_04_result.png)
 
 *Key Finding:* Alcoholic products appeared near the bottom of the departmental sales-quantity ranking for Christmas Day 2019.
+
 
 
 ### 5. Most Profitable Year
@@ -128,6 +134,7 @@ Personal Care recorded the highest profit at *$4,169,483, while Household record
 *Key Finding:* 2020 was the most profitable year in the dataset, recording a total profit of *$2,146,575.10*.
 
 
+
 ### 6. Most Recent Cheese Order
 
 *Question:* How many days had passed since the last cheese order, as of the latest order date in the dataset?
@@ -141,3 +148,103 @@ Personal Care recorded the highest profit at *$4,169,483, while Household record
 ![Question 6 Result](screenshots/question_06_result.png)
 
 *Key Finding:* The most recent cheese order was recorded on *7 April 2023*, which was also the latest order date in the dataset.
+
+
+
+### 7. Alcohol Sales by Time of Day
+
+*Question:* At what time of day are alcoholic products purchased the most?
+
+*SQL Query:*
+
+![Question 7 SQL Query](screenshots/question_07_query.png)
+
+*Query Result:*
+
+![Question 7 Result](screenshots/question_07_result.png)
+
+*Key Finding:* Alcohol sales peaked at 3:00 PM, with **20,885 units** sold.
+
+
+
+### 8. Bread Revenue in Q2 and Q3 of 2016
+
+*Question:* What was the total revenue generated from bread products during Q2 and Q3 of 2016?
+
+*SQL Query:*
+
+![Question 8 SQL Query](screenshots/question_08_query.png)
+
+*Query Result:*
+
+![Question 8 Result](screenshots/question_08_result.png)
+
+*Key Finding:* Bread products generated a combined revenue of *$123,521.00* during Q2 and Q3 of 2016.
+
+
+
+### 9. Top Three Nighttime Products (2020–2022)
+
+*Question:* Which three products recorded the highest purchase quantities during nighttime between 2020 and 2022?
+
+*SQL Query:*
+
+![Question 9 SQL Query](screenshots/question_09_query.png)
+
+*Query Result:*
+
+![Question 9 Result](screenshots/question_09_result.png)
+
+*Key Finding:* Between 2020 and 2022, the three products with the highest recorded purchase quantities during nighttime were:
+
+1. *2 Ply Paper Towel Rolls* — 78 units
+2. *Agave Ginger Ale Soda* — 77 units
+3. *Gold Blend Tea Bags* — 70 units
+
+
+
+### 10. Revenue Generated from Juice Products
+
+*Question:* What is the total revenue generated from juice products across the dataset's reporting period?
+
+*SQL Query:*
+
+![Question 10 SQL Query](screenshots/question_10_query.png)
+
+*Query Result:*
+
+![Question 10 Result](screenshots/question_10_result.png)
+
+*Key Finding:* Juice products generated a total revenue of *$3,443,450* across the dataset's reporting period.
+
+
+## Business Recommendations
+Based on the findings from the analysis, the following recommendations could help inform Instacart’s sales and inventory decisions:
+
+1.	Prioritise top-performing products: Monitor the availability of high-revenue products, such as Apple Cinnamon Cheerios Cereal, to help maintain consistent product availability.
+2.	Plan for weekday demand patterns: Consider Sunday purchasing trends when planning inventory and promotional activities for chocolate products.
+3.	Review departmental profitability: Pay particular attention to departments with lower profits among those exceeding the $15 million revenue threshold, such as Household, to identify opportunities for improving profitability.
+4.	Evaluate seasonal sales patterns: Use Christmas Day sales results to better understand departmental demand during the holiday period, including the relatively low ranking of alcoholic products.
+5.	Monitor annual profitability: Examine the factors contributing to the strong profit recorded in 2020 and assess whether similar performance patterns can be sustained.
+6.	Use purchasing recency to guide product monitoring: Track the frequency and timing of cheese purchases to better understand demand patterns over time.
+7.	Align inventory planning with purchase times: Consider the 3:00 PM peak in alcohol sales when planning product availability and promotional timing.
+8.	Review bread sales across reporting periods: Use the Q2 and Q3 2016 revenue result as a reference point for examining bread sales across other periods.
+9.	Monitor nighttime purchasing patterns: Consider the purchase quantities of the three leading nighttime products when planning inventory for evening demand.
+10.	Track juice revenue performance: Continue monitoring juice product revenue to understand its contribution to overall sales and identify opportunities for further analysis.
+
+
+
+## Conclusion
+This project applied SQL and PostgreSQL to explore Instacart’s sales and product performance across the dataset’s reporting period.
+The analysis provided insights into top-performing products, departmental profitability, sales patterns, purchasing behaviour, order timing, and revenue trends.
+Through the ten business questions, the project demonstrated how SQL can be used to investigate business problems, analyse relational data, and extract meaningful insights to support business decisions.
+It also strengthened practical skills in database creation, table relationships, querying, joining, filtering, aggregation, and date and time-based analysis using PostgreSQL.
+
+
+
+
+
+
+
+
+
